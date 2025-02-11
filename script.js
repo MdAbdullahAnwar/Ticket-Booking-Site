@@ -15,7 +15,12 @@ function saveToLocalStorage(event) {
     }
 
     const obj = { username, seatNumber };
-    localStorage.setItem(seatNumber, JSON.stringify(obj));
+    
+    if(seatNumber > 0)
+    {
+        localStorage.setItem(seatNumber, JSON.stringify(obj));
+    }
+
     showUserOnScreen(obj);
 
     document.getElementById('username').value = "";
@@ -36,6 +41,13 @@ function showUserOnScreen(obj) {
     }
 
     const childElement = document.createElement('p');
+    
+    if(obj.seatNumber <= 0)
+    {
+        alert("Invalid Seat");
+        return;
+    }
+
     childElement.id = `user-${obj.seatNumber}`;
     childElement.textContent = `${obj.username} Seat:${obj.seatNumber}`;
 

@@ -11,22 +11,23 @@
         <header class="header">
             <h1>Movie Booking</h1>
             <p id="totalBooked">Total Booked: 0</p>  
-            <p>Find Slot: <input type="text" id="findSeat"> <button onclick="findUser()">Search</button></p>
+            <p>Find Slot: <input type="text" id="findSeat"> <button id="get-btn" type="button" onclick="findUser()">SEARCH</button></p>
             <h2 id="message"></h2>
         </header>
         
         <main class="main">
             <label for="username">User Name:</label>
-            <input type="text" id="username" required>
+            <input type="text" name="username" id="username" required>
             <label for="seatNumber">Seat Number:</label>
-            <input type="text" id="seatNumber" required>
-            <button type="button" onclick="saveToLocalStorage(event)">ADD</button>
-        
+            <input type="text" name="seatNumber" id="seatNumber" required>
+            <button type="button" id="post-btn" onclick="saveToLocalStorage(event)">ADD</button>
             <h2 id="emptyMessage">Nothing Present</h2>
         </main>
         
         <div id="display"></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+

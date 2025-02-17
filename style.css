@@ -86,6 +86,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    margin: 2px;
 }
 
 button:hover {
@@ -114,26 +115,3 @@ p {
     align-items: center;
 }
 
-input[type="button"] {
-    background: #dc3545;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-left: 5px;
-}
-
-input[type="button"]:hover {
-    background: #c82333;
-}
-
-input[type="button"].edit {
-    background: #ffc107;
-    color: black;
-}
-
-input[type="button"].edit:hover {
-    background: #e0a800;
-}

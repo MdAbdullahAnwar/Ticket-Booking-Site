@@ -1,4 +1,4 @@
-const API_URL = "https://crudcrud.com/api/659dc2d504ce413eb72fc8356129fc8b/seat";
+const API_URL = "https://crudcrud.com/api/999xc2w515ec315vb32jc8146584tu1r/seat";
 
 // Save Booking (POST)
 function saveToApi(event) {
